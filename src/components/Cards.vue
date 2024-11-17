@@ -74,7 +74,9 @@
               <tr>
                 <td>Fulano</td>
                 <td>fulano@gmail.com</td>
-                <td>Admin</td>
+                <td>
+                  <v-chip color="primary" variant="outlined" size="small">Admin</v-chip>
+                </td>
                 <td>
                   <v-btn 
                     icon="mdi-pencil"
@@ -87,7 +89,9 @@
               <tr>
                 <td>Cicrano</td>
                 <td>cicrano@gmail.com</td>
-                <td>Gerente</td>
+                <td>
+                  <v-chip color="success" variant="outlined" size="small">Gerente</v-chip>
+                </td>
                 <td>
                   <v-btn 
                     icon="mdi-pencil"
@@ -100,7 +104,9 @@
               <tr>
                 <td>Beltrano</td>
                 <td>beltrano@gmail.com</td>
-                <td>Convidado</td>
+                <td>
+                  <v-chip variant="outlined" size="small">Convidado</v-chip>
+                </td>
                 <td>
                   <v-btn 
                     icon="mdi-pencil"
