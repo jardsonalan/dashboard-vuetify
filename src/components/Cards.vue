@@ -3,7 +3,35 @@
         <h1 class="mb-6">Dashboard</h1>
 
         <v-card flat class="border mb-4">
-          <v-card-title>Últimos usuários</v-card-title>
+          <div class="d-flex justify-space-between">
+            <v-card-title>Últimos usuários</v-card-title>
+            
+            <!-- Evita conflitos no código -->
+            <v-card-title>
+              <!-- Chamada para abrir o dialog -->
+              <v-btn 
+                @click="isDialogOpen = true"
+                flat 
+                class="border" 
+                variant="tonal"
+                size="small"
+              >
+                Adicionar usuário
+              </v-btn>
+
+              <v-dialog
+                v-model="isDialogOpen"
+                width="600px"
+              >
+                <v-card>
+                  <v-card-text>
+                    dsadasdasd
+                  </v-card-text>
+                </v-card>
+              </v-dialog>
+            </v-card-title>
+
+          </div>
           
           <v-table>
             <thead>
@@ -147,5 +175,7 @@
 </template>
 
 <script setup lang="ts">
-    //
+import { ref } from 'vue';
+
+    const isDialogOpen = ref(false)
 </script>  
