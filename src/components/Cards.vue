@@ -33,7 +33,12 @@
                       </v-col>
 
                       <v-col>
-                        <v-text-field label="Email" variant="outlined"></v-text-field>
+                        <v-text-field 
+                          label="Email" 
+                          variant="outlined"
+                          :rules="emailRules"
+                        >
+                        </v-text-field>
                       </v-col>
                     </v-row>
 
@@ -203,4 +208,22 @@ import { ref } from 'vue';
     const isDialogOpen = ref(false)
 
     const cargos = ['Admin', 'Gerente', 'Convidado']
+
+    // Validação de email - simples
+    const emailRules = [
+      value => {
+        if (value) {
+          return true;
+        } else {
+          return 'Email obrigatório';
+        }
+      },
+      value => {
+        if (value.includes('@')) {
+          return true;
+        } else {
+          return 'Email inválido';
+        }
+      }
+    ]
 </script>  
