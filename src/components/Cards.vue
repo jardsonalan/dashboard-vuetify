@@ -15,6 +15,7 @@
                 class="border" 
                 variant="tonal"
                 size="small"
+                :ripple="false"
               >
                 Adicionar usuário
               </v-btn>
