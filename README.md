@@ -1,5 +1,5 @@
 # Dashboard - Vuetify
-Este projeto se trata de uma dashboard apenas visual, sem nenhuma funcionalidade, feita durante um curso de Vuetify, no canal Thiago Matos, no YouTube. O principal foco desse projeto foi aprender sobre algumas funcionalidades que o Vuetify disponibiliza.
+Este projeto se trata de uma dashboard apenas visual, sem nenhuma funcionalidade, feita durante um curso de Vuetify, no canal [Thiago Matos](https://www.youtube.com/@tiagomatosweb), no YouTube. O principal foco desse projeto foi aprender sobre algumas funcionalidades que o Vuetify disponibiliza.
 
 ## Tecnologias utilizadas:
 - Vuejs
