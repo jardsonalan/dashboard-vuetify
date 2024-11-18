@@ -13,7 +13,13 @@ node --version
 ```
 Caso não tenha o node instalado, procure a documentação oficial e faça a instalação.
 
-## Instalação de dependências utilizando ```npm```:
+## Instalação do TypeScript:
+Instale o TypeScript na sua máquina, executando o seguinte comando:
+```bash
+npm install -g typescript
+```
+
+## Instalação de dependências (`node_modules`):
 Certifique-se que você está dentro da pasta do projeto e execute o comando:
 ```bash
 npm install
