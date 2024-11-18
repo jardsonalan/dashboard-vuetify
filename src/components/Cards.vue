@@ -30,13 +30,12 @@
                   <v-card-text>
                     <v-row>
                       <v-col>
-                        <v-text-field label="Nome" variant="outlined"></v-text-field>
+                        <v-text-field label="Nome"></v-text-field>
                       </v-col>
 
                       <v-col>
                         <v-text-field 
-                          label="Email" 
-                          variant="outlined"
+                          label="Email"
                           :rules="emailRules"
                         >
                         </v-text-field>
@@ -44,8 +43,7 @@
                     </v-row>
 
                     <v-select 
-                      label="Cargo" 
-                      variant="outlined"
+                      label="Cargo"
                       :items="cargos"
                     >
                     </v-select>
@@ -218,14 +216,14 @@ import { ref } from 'vue';
 
     // Validação de email - simples
     const emailRules = [
-      value => {
+      (value:any) => {
         if (value) {
           return true;
         } else {
           return 'Email obrigatório';
         }
       },
-      value => {
+      (value:any) => {
         if (value.includes('@')) {
           return true;
         } else {
